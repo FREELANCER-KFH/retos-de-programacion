@@ -1,5 +1,5 @@
 '''
-This is the first project in the course 'Scientific Computing woth Python'.
+This is the first project in the course 'Scientific Computing with Python'.
 I learned a lot about string manipulations.
 Att: Kevin Feliz Henríquez.
 Thanks to FreeCodeCamp for bringing this course step by step for a better learning experiense.
