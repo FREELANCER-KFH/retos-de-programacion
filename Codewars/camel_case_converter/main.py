@@ -13,6 +13,7 @@ def to_camel_case(text):
     camel_case = words[0] + "".join(word.capitalize() for word in words[1:])
     return camel_case
 
+'''
 #It's running time
 sneak_case_sentences = [
     "the-stealth-warrior",
@@ -23,3 +24,18 @@ sneak_case_sentences = [
 
 for sneak_case_sentence in sneak_case_sentences:
     print(f"Input: {sneak_case_sentences} --> Output: {to_camel_case(sneak_case_sentence)}")
+'''
+
+#Test cases:
+def test_to_camel_case():
+    assert to_camel_case("the-stealth-warrior") == "theStealthWarrior", "Test 1 failed"
+    assert to_camel_case("The_Stealth_Warrior") == "TheStealthWarrior", "Test 2 failed"
+    assert to_camel_case("The_Stealth-Warrior") == "TheStealthWarrior", "Test 3 failed"
+    assert to_camel_case("") == "", "Test 4 failed"
+    assert to_camel_case("warrior") == "warrior", "Test 5 failed"
+    assert to_camel_case("___") == "", "Test 6 failed"
+    assert to_camel_case("stealth-warrior") == "stealthWarrior", "Test 7 failed"
+    assert to_camel_case("this_is-a-test-case") == "thisIsATestCase", "Test 8 failed"
+    print("All tests passed!")
+
+test_to_camel_case()
