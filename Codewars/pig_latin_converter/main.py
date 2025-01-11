@@ -19,12 +19,12 @@ def pig_it(text):
     return " ".join(transformed_words)
 
 #Running time
-examples = [
+sentences = [
     "Pig latin is cool",
     "Hello world !",
     "This is a test, isn't it?",
     "Let's code!"
 ]
 
-for example in examples:
-    print(f"Input: {example} --> Output: {pig_it(example)}")
+for sentence in sentences:
+    print(f"Input: {sentence} --> Output: {pig_it(sentence)}")
