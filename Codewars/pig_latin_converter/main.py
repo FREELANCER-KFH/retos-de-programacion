@@ -18,6 +18,7 @@ def pig_it(text):
 
     return " ".join(transformed_words)
 
+'''
 #Running time
 sentences = [
     "Pig latin is cool",
@@ -28,3 +29,18 @@ sentences = [
 
 for sentence in sentences:
     print(f"Input: {sentence} --> Output: {pig_it(sentence)}")
+'''
+
+#Test cases:
+def test_pig_it():
+    assert pig_it("Pig latin is cool") == "igPay atinlay siay oolcay", "Test 1 failed"
+    assert pig_it("Hello world !") == "elloHay orldway !", "Test 2 failed"
+    assert pig_it("This is a test, isn't it?") == "hisTay siay aay esttay, isn'tay itay?", "Test 3 failed"
+    assert pig_it("Let's code!") == "et'sLay odecay!", "Test 4 failed"
+    assert pig_it("Python") == "ythonPay", "Test 5 failed"
+    assert pig_it("!?") == "!?", "Test 6 failed"
+    assert pig_it("") == "", "Test 7 failed"
+
+    print("All tests passed!")
+
+test_pig_it()
