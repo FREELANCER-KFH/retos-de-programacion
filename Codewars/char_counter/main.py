@@ -15,6 +15,7 @@ def count_characters(string):
     
     return char_count
 
+'''
 #It's running time
 sentences = [
     "aba",
@@ -28,3 +29,18 @@ sentences = [
 
 for sentence in sentences:
     print(f"Input: '{sentence}' --> Output: {count_characters(sentence)}")
+'''
+
+#test cases:
+def test_count_characters():
+    assert count_characters("aba") == {'a': 2, 'b': 1}, "Test 1 failed"
+    assert count_characters("hello world") == {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1}, "Test 2 failed"
+    assert count_characters("") == {}, "Test 3 failed"
+    assert count_characters("abc") == {'a': 1, 'b': 1, 'c': 1}, "Test 4 failed"
+    assert count_characters("123123") == {'1': 2, '2': 2, '3': 2}, "Test 5 failed"
+    assert count_characters("a!a@b#b$c") == {'a': 2, '!': 1, '@': 1, 'b': 2, '#': 1, '$': 1, 'c': 1}, "Test 6 failed"
+    assert count_characters("aaaaabbbbcccdde") == {'a': 5, 'b': 4, 'c': 3, 'd': 2, 'e': 1}, "Test 7 failed"
+
+    print("All tests passed!")
+
+test_count_characters()
