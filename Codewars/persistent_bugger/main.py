@@ -3,7 +3,7 @@ In this project, I implements a function to calculate the multiplicative persist
 The multiplicative persistence is the number of times the digits of a number must be multiplied together until the result is a single-digit number. 
 The function uses a helper to multiply digits iteratively, ensuring an efficient and clear solution.
 
-This project is part of the kata chanllenges in CodeWars for Python.
+This project is part of the kata chanllenges in CodeWars for Python. 
 
 Att: Kevin Feliz Henríquez.
 '''
